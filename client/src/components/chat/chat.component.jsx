@@ -15,7 +15,7 @@ const Chat = ({ location }) => {
     const [room, setRoom] = useState('');
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
-    const endPoint = 'localhost:5000';
+    const endPoint = 'https://whm-chat.herokuapp.com/';
 
     useEffect(() => {
         const { name, room } = queryString.parse(location.search)
