@@ -13,6 +13,14 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, 'client/build')));
+
+    app.get('*', function (req, res) {
+        res.sendFile(path.join(__dirname, 'client/build', 'index.html'))
+    })
+}
+
 io.on('connection', (socket) => {
 
     socket.on('join', ({ name, room }, callback) => {
