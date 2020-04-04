@@ -25,6 +25,11 @@
     padding: 0 5%;
     margin-top: 3px;
   }
+
+  /* .info-text {
+    display: flex;
+    justify-content: flex-end;
+  } */
   
   .sent-text {
     display: flex;
@@ -32,6 +37,14 @@
     font-family: Helvetica;
     color: #828282;
     letter-spacing: 0.3px;
+  }
+
+  .timestamp {
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    color: #828282;
+    margin-right: 5px;
   }
   
   .pl-10 {
@@ -64,4 +77,10 @@
   
   .bg-otheruser {
     background: #F3F3F3;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .msg-container {
+      flex-direction: column;
+    }
   }

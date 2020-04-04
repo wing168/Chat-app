@@ -55,11 +55,11 @@ html, body {
   }
   
   @media (min-width: 320px) and (max-width: 480px) {
-    .joinOuterContainer {
+    .join-outer-container {
       height: 100%;
     }
   
-    .joinInnerContainer {
+    .join-inner-container {
       width: 90%;
     }
   

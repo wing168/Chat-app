@@ -1,0 +1,1 @@
+- If user is on mobile and leaves the page to use say whatsApp then it disconnects

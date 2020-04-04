@@ -1,0 +1,11 @@
+.user-container {
+    display: flex;
+    height:  50px;
+    width: 300px;
+    background-color: white;
+    color: black;
+    margin: 10px;
+    
+}
+
+
